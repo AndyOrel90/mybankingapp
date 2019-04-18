@@ -30,6 +30,13 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.lucee/postgresql -->
+		<dependency>
+			<groupId>org.lucee</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>8.3-606.jdbc4</version>
+		</dependency>
+
 
 	</dependencies>
 </project>

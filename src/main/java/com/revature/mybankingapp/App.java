@@ -9,6 +9,10 @@ public class App
     public static void main( String[] args )
     {
     	//new
-        //System.out.println( "Hello World!" );
+    	//System.out.println("Welcome to my banking app");
+    	
+    	MainREPL main = new MainREPL();
+    	
+    	main.run();
     }
 }

@@ -1,5 +1,8 @@
 package com.revature.mybankingapp;
 
+import com.revaure.mybankingapp.dao.UserDAO;
+import com.revaure.mybankingapp.dao.UserDAOImpl;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -34,5 +37,18 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    public void testUserDAOlogin()
+    {
+    	User loggedinuser = new User();
+    	User test = new User();
+		UserDAO userdao = new UserDAOImpl();
+		
+		loggedinuser = userdao.login("username1", "password1");
+		
+		Class aClass = loggedinuser.getClass();
+    	
+        assertTrue(aClass.isInstance(test));
     }
 }
